@@ -1,7 +1,9 @@
 <template lang="html">
   <div id="app">
     <navigation />
-    <router-view :key="$route.path" />
+    <transition name="slide" mode="out-in">
+      <router-view :key="$route.path" />
+    </transition>
   </div>
 </template>
 <script>
@@ -33,5 +35,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+
+.slide-enter-active,
+.side-leave-active {
+  transition: opacity 0.3s ease-in;
+}
+
+.slide-enter,
+.slide-leave-to {
+  opacity: 0;
 }
 </style>

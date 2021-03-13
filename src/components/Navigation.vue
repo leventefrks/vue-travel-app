@@ -35,21 +35,27 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.nav-links {
+nav {
   display: flex;
   align-items: center;
-  list-style-type: none;
-  font-size: 1.2rem;
-  padding: 1rem 0;
+  justify-content: center;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    padding: 0 20px;
+  .nav-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 1rem 0;
 
-    &.active {
-      color: #42b983;
+    a {
+      font-weight: bold;
+      color: #2c3e50;
+      text-decoration: none;
+      padding: 0 20px;
+
+      &.active {
+        color: #42b983;
+      }
     }
   }
 }
