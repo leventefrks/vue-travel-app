@@ -17,6 +17,9 @@
           >{{ destination.name }}</router-link
         >
       </li>
+      <li class="links">
+        <router-link to="/user">Dashboard</router-link>
+      </li>
     </ul>
   </nav>
 </template>
@@ -39,6 +42,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
 
   .nav-links {
     display: flex;

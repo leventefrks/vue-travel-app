@@ -52,7 +52,7 @@ export default {
 <style scoped lang="scss">
 section {
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 40px auto 20px;
 }
 
 .experience-details {
