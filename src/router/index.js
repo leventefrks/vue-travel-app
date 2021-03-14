@@ -56,6 +56,13 @@ const routes = [
     meta: { requiresAuth: true }
   },
   {
+    path: '/invoices',
+    name: 'invoices',
+    component: () =>
+      import(/* webpackChunkName: "invoices" */ '../views/Invoices.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
     path: '/404',
     alias: '*',
     name: 'notFound',
